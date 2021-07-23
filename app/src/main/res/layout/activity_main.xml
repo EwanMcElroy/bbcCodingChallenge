@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:layout_width="fill_parent" android:layout_height="100px" android:text="BBC coding Challenge" android:layout_marginLeft="300px"></TextView>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="150px" android:orientation="horizontal"><TextView android:layout_width="150px" android:layout_height="fill_parent" android:text="Serach by Id"></TextView> <EditText android:layout_height="match_parent" android:layout_width="650px" android:id="@+id/idSearchBar"></EditText><Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Search" android:id="@+id/idButton"></Button></LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="150px" android:orientation="horizontal"><TextView android:layout_width="150px" android:layout_height="fill_parent" android:text="Serach by Artist"></TextView> <EditText android:layout_height="match_parent" android:layout_width="650px" android:id="@+id/artistSearchBar"></EditText><Button android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Search" android:id="@+id/artistButton"></Button></LinearLayout>
+        <Button android:layout_width="fill_parent" android:layout_height="150px" android:text="Add album" android:id="@+id/addButton"></Button>
+        <Button android:layout_width="fill_parent" android:layout_height="150px" android:text="Delete album" android:id="@+id/deleteButton"></Button>
+        <ListView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/list_item"></ListView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Programmed by Ewan McElroy"></TextView>
+    </LinearLayout>
+</ScrollView>
