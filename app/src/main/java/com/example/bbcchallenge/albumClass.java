@@ -10,6 +10,13 @@ public class albumClass {
         artist = "";
         release = "";
     }
+    public albumClass(String _id, String _title, String _artist, String _release)
+    {
+        id = _id;
+        title = _title;
+        artist = _artist;
+        release = _release;
+    }
 
     public String getId() {return id;}
     public String getTitle() {return title;}
