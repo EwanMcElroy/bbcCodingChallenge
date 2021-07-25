@@ -23,15 +23,15 @@ public class ListFiller extends ArrayAdapter<albumClass> {
     @NonNull
     @Override
     public View getView(int _pos, @NonNull View _convertView, @NonNull ViewGroup parent) {
-        View listItem = _convertView;
+        View listItem = _convertView; // get item
         if(listItem == null) {
-            listItem = LayoutInflater.from(thisContext).inflate(R.layout.listview, parent, false);
+            listItem = LayoutInflater.from(thisContext).inflate(R.layout.listview, parent, false); // add to list item
         }
 
-        TextView text = (TextView)listItem.findViewById(R.id.label);
+        TextView text = (TextView)listItem.findViewById(R.id.label); // init text view
 
-        albumClass album = items.get(_pos);
-        text.setText(album.getTitle() + " by " + album.getArtist() + ": " + album.getRelease());
+        albumClass album = items.get(_pos); // get current album
+        text.setText(album.getTitle() + " by " + album.getArtist() + ": " + album.getRelease()); // display message
 
         return text;
     }
